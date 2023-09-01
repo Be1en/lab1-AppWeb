@@ -1,0 +1,118 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 31/08/2023, 02:49:38 PM
+    Author     : Personal
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Handjet:wght@200;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Concert+One&display=swap');
+
+:root{
+    --barra-length:0%;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Handjet';
+    margin: 0px;
+    padding: 0px;
+
+    
+}
+html{
+    scroll-behavior: smooth;
+
+}
+.contenido-header{
+    background: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenido-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    /* este permitio separar el logo del menu */
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenido-header header .bienvenida a{
+    font-family: 'Concert One';
+    font-size: 46px;
+    color: #EA7F59;
+    font-weight: bold;
+    text-decoration: none;
+}
+.contenido-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenido-header header nav ul li a{
+    text-align: none;
+    color: #FFA88A;
+    margin: 0px 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+    font-size: 20px;
+}
+.contenido-header header nav ul li a:hover{
+    color: #EE6137;
+}
+.icono-menu{
+    background-color: #EA7F59;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+.inicio{
+    background: linear-gradient(to top, rgba(172,224,243 ,.3), rgba(238,202,55,.5)),
+    url(images/gif1.gif);
+    background-size: cover;
+    height: 100vh;
+    color: #ffff;
+    display: flex;
+    /* este permitio separar el logo del menu */
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    background-color: #fff;
+    display: flex;
+    max-width: 100vw;
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container img {
+    width: 0px;
+    flex-grow: 0.5;
+    height: 375px;
+    object-fit: cover;
+    opacity: .8;
+    object-position: center;
+    padding: 6px;
+    transition: .8s ease;
+    
+}
+
+.container img:hover {
+    cursor: crosshair;
+    width: 310px;
+    object-fit: contain;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.container h2{
+    font-family: 'Concert One';
+    font-size: 46px;
+}
